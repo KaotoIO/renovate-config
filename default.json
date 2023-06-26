@@ -7,7 +7,6 @@
   "schedule": [
     "before 6am"
   ],
-  "prCreation":"not-pending",
   "packageRules": [
     {
       "groupName": "react monorepo",

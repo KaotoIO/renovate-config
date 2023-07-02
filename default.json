@@ -24,7 +24,7 @@
       "matchPackagePatterns": ["@kie-tools"]
     },
     {
-      "groupName": "@kie-tools",
+      "groupName": "@opentelemetry",
       "matchPackagePatterns": ["@opentelemetry"]
     },
     {

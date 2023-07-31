@@ -28,6 +28,10 @@
       "matchPackagePatterns": ["@opentelemetry"]
     },
     {
+      "groupName": "@patternfly",
+      "matchPackagePatterns": ["@patternfly"]
+    },
+    {
       "extends": "monorepo:storybook",
       "groupName": "storybook monorepo",
       "matchUpdateTypes": [

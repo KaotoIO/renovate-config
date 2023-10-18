@@ -32,6 +32,10 @@
       "matchPackagePatterns": ["@patternfly"]
     },
     {
+      "groupName": "@lerna-lite",
+      "matchPackagePatterns": ["@lerna-lite"]
+    },
+    {
       "extends": "monorepo:storybook",
       "groupName": "storybook monorepo",
       "matchUpdateTypes": [

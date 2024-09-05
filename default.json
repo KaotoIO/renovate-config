@@ -4,8 +4,13 @@
     "config:base",
     ":dependencyDashboard"
   ],
+  "timezone": "Europe/Madrid Africa/Ceuta",
   "schedule": [
-    "before 6am"
+    "on the first day of the month"
+  ],
+  "labels": [
+    "renovate",
+    "dependencies"
   ],
   "packageRules": [
     {

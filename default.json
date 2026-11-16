@@ -5,6 +5,8 @@
     ":dependencyDashboard"
   ],
   "timezone": "Europe/Madrid",
+  "prConcurrentLimit": 2,
+  "branchConcurrentLimit": 2,
   "schedule": [
     "on the first day of the month"
   ],

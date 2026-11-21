@@ -1,10 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "config:recommended",
     ":dependencyDashboard"
   ],
   "timezone": "Europe/Madrid",
+  "configMigration": true,
+  "minimumReleaseAge": "3 days",
+  "internalChecksFilter": "strict",
+  "postUpdateOptions": [
+    "yarnDedupeHighest"
+  ],
+  "dependencyDashboard": {
+    "osvVulnerabilitySummary": "unresolved"
+  },
   "prConcurrentLimit": 5,
   "schedule": [
     "before 6am on monday"
@@ -42,26 +51,18 @@
     },
     {
       "groupName": "eslint",
-      "matchPackagePatterns": ["eslint"]
-    },
-    {
-      "groupName": "@kie-tools",
-      "matchPackagePatterns": ["@kie-tools"]
-    },
-    {
-      "groupName": "@opentelemetry",
-      "matchPackagePatterns": ["@opentelemetry"]
+      "matchPackageNames": ["/eslint/"]
     },
     {
       "groupName": "@patternfly",
-      "matchPackagePatterns": ["@patternfly"]
+      "matchPackageNames": ["/@patternfly/"]
     },
     {
       "groupName": "@lerna-lite",
-      "matchPackagePatterns": ["@lerna-lite"]
+      "matchPackageNames": ["/@lerna-lite/"]
     },
     {
-      "extends": "monorepo:storybook",
+      "extends": ["monorepo:storybook"],
       "groupName": "storybook monorepo",
       "matchUpdateTypes": [
         "digest",

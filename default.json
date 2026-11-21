@@ -5,10 +5,9 @@
     ":dependencyDashboard"
   ],
   "timezone": "Europe/Madrid",
-  "prConcurrentLimit": 2,
-  "branchConcurrentLimit": 2,
+  "prConcurrentLimit": 5,
   "schedule": [
-    "on the first day of the month"
+    "before 6am on monday"
   ],
   "labels": [
     "renovate",
@@ -29,6 +28,11 @@
     ]
   },
   "packageRules": [
+    {
+      "description": "Major updates need a decision first: they only get a branch and PR once they are ticked in the Dependency Dashboard",
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    },
     {
       "groupName": "react monorepo",
       "matchPackageNames": [

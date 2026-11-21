@@ -43,33 +43,12 @@
       "dependencyDashboardApproval": true
     },
     {
-      "groupName": "react monorepo",
-      "matchPackageNames": [
-        "@types/react",
-        "@types/react-dom"
-      ]
-    },
-    {
       "groupName": "eslint",
       "matchPackageNames": ["/eslint/"]
     },
     {
-      "groupName": "@patternfly",
-      "matchPackageNames": ["/@patternfly/"]
-    },
-    {
       "groupName": "@lerna-lite",
       "matchPackageNames": ["/@lerna-lite/"]
-    },
-    {
-      "extends": ["monorepo:storybook"],
-      "groupName": "storybook monorepo",
-      "matchUpdateTypes": [
-        "digest",
-        "patch",
-        "minor",
-        "major"
-      ]
     }
   ]
 }
